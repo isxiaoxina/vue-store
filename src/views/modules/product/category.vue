@@ -181,13 +181,14 @@ export default {
       var level = this.countNodeLevel(draggingNode.data);
 
       let deep = this.maxLevel - draggingNode.data.catLevel + 1;
-      console.log(deep);
+     
 
       if (type == "inner") {
         return (deep + dropNode.level) <= 3;
       } else {
         return (deep + dropNode.parent.level) <= 3;
       }
+      console.log("ss");
 
       return false;
     },
