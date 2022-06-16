@@ -188,7 +188,7 @@ export default {
       } else {
         return (deep + dropNode.parent.level) <= 3;
       }
-
+         console.log("ssssssssssssssssss");
       return false;
     },
     //求最大深度的方法   用层级来算
